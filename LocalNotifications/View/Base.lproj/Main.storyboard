@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LocalNotifications" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AuE-Tt-28J" customClass="ShadowView" customModule="LocalNotifications" customModuleProvider="target">
+                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kju-Io-5XK">
+                                        <rect key="frame" x="0.0" y="40" width="300" height="220"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4s-5p-lSe">
+                                                <rect key="frame" x="146" y="0.0" width="154" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="Imk-3H-AbY"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="gcc-55-KPR"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="timerIcon"/>
+                                                <connections>
+                                                    <action selector="didTapTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cdf-kJ-73O"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oub-6Z-9qF">
+                                                <rect key="frame" x="0.0" y="120" width="300" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7E-mk-rMD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="126" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Pkf-an-XSp"/>
+                                                            <constraint firstAttribute="height" constant="100" id="yDp-QW-n0w"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button" image="dateIcon"/>
+                                                        <connections>
+                                                            <action selector="didTapDate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m7Q-hM-1KV"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0M-sn-swk">
+                                                        <rect key="frame" x="146" y="0.0" width="154" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="5R2-OE-4ov"/>
+                                                            <constraint firstAttribute="height" constant="100" id="NC8-h7-StN"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button" image="locationIcon"/>
+                                                        <connections>
+                                                            <action selector="didTapLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lHz-rb-KKj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kju-Io-5XK" secondAttribute="trailing" id="Mgo-gq-6xR"/>
+                                    <constraint firstItem="kju-Io-5XK" firstAttribute="top" secondItem="AuE-Tt-28J" secondAttribute="top" constant="40" id="Vct-Kw-F33"/>
+                                    <constraint firstItem="kju-Io-5XK" firstAttribute="leading" secondItem="AuE-Tt-28J" secondAttribute="leading" id="c5r-tO-htH"/>
+                                    <constraint firstAttribute="width" constant="300" id="dMs-Nu-3Az"/>
+                                    <constraint firstItem="kju-Io-5XK" firstAttribute="centerY" secondItem="AuE-Tt-28J" secondAttribute="centerY" id="dXV-Tx-Fpk"/>
+                                    <constraint firstAttribute="height" constant="300" id="dlu-TC-jGc"/>
+                                    <constraint firstAttribute="bottom" secondItem="kju-Io-5XK" secondAttribute="bottom" constant="40" id="gMQ-0Q-dUA"/>
+                                    <constraint firstItem="kju-Io-5XK" firstAttribute="centerX" secondItem="AuE-Tt-28J" secondAttribute="centerX" id="pDr-Jo-DsI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AuE-Tt-28J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Si5-B9-AU1"/>
+                            <constraint firstItem="AuE-Tt-28J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vgd-F1-llH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dateIcon" width="100" height="100"/>
+        <image name="locationIcon" width="100" height="100"/>
+        <image name="timerIcon" width="100" height="100"/>
+    </resources>
+</document>
