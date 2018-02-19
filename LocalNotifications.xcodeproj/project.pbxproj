@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		078E23A1203A762200D7CBD8 /* CLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078E23A0203A762200D7CBD8 /* CLService.swift */; };
 		07CFA78D2037D01A00B8D819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CFA78C2037D01A00B8D819 /* AppDelegate.swift */; };
 		07CFA78F2037D01A00B8D819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CFA78E2037D01A00B8D819 /* ViewController.swift */; };
 		07CFA7922037D01A00B8D819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CFA7902037D01A00B8D819 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		078E23A0203A762200D7CBD8 /* CLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLService.swift; sourceTree = "<group>"; };
 		07CFA7892037D01A00B8D819 /* LocalNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CFA78C2037D01A00B8D819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07CFA78E2037D01A00B8D819 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			children = (
 				07CFA7AB2038066200B8D819 /* UNService.swift */,
 				07CFA7EB2039608600B8D819 /* AlertService.swift */,
+				078E23A0203A762200D7CBD8 /* CLService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078E23A1203A762200D7CBD8 /* CLService.swift in Sources */,
 				07CFA7A32037F0E900B8D819 /* ShadowView.swift in Sources */,
 				07CFA78F2037D01A00B8D819 /* ViewController.swift in Sources */,
 				07CFA7AC2038066200B8D819 /* UNService.swift in Sources */,
